@@ -29,7 +29,7 @@ const{year}= details;
 console.log('song:',anotherSong);
 console.log('Duration:',duration);
 console.log('Author:', author);
-console.log('Year:',year);
+console.log('Release Year:',year);
 
 
 
