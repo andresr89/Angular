@@ -19,18 +19,25 @@ const audioPlayer: AudioPlayer = {
         year: 2015
     }
 }
-const song = 'New Song';
+// const song = 'New Song';
 
-const {song:anotherSong,songDuration:duration,details:details,}= audioPlayer;
+// const {song:anotherSong,songDuration:duration,details:details,}= audioPlayer;
 
-const {author} = details;
-const{year}= details;
+// const {author} = details;
+// const{year}= details;
 
-console.log('song:',anotherSong);
-console.log('Duration:',duration);
-console.log('Author:', author);
-console.log('Release Year:',year);
+// console.log('song:',anotherSong);
+// console.log('Duration:',duration);
+// console.log('Author:', author);
+// console.log('Release Year:',year);
 
+
+
+const [, ,trunks = 'Not found']: string[]= ['Goku','vegeta',];
+
+
+
+console.error('personaje 3 :',trunks);
 
 
 
