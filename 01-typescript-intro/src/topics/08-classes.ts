@@ -3,21 +3,46 @@
 
 
 
-export class person {
+export class Person {
     //  public name: string;
     //  private address : string;
 
      constructor(
-        public name: string,
-        public addres:string = 'No Address'
+        public firstName: string,
+        public lastName:string ,
+        public address:string= 'No Address'
 
         ){}
 }
-export class Hero extends person{
-    constructor ()
+// export class Hero extends person{
+//     constructor (
+//         public alterEgo : string,
+//         public age : number,
+//         public realName : string,
+//     ){
+    
+//         super (realName,'New York');
+//     }
+// }
+export class Hero {
 
+    // public person: Person;
+
+
+
+    constructor (
+        public alterEgo : string,
+        public age : number,
+        public realName : string,
+        public person : Person,
+    ){
+        
+    
+    }
 }
 
-const ironman = new Hero('Ironman', 'New York');
+const tony = new Person ('tony','Stark', 'New York');
+
+const ironman = new Hero('Ironman',45,'Tony', tony);
 
 console.log (ironman)
