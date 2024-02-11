@@ -1,4 +1,4 @@
- import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { Character } from '../../interfaces/character.interface';
 
 @Component({
@@ -14,8 +14,11 @@ export class ListComponent {
     power : 10
   }]
 
-  onDeleteCharacter (index:number):void{
+  @Output()
+  public onDelete : EventEmitter<number> = new EventEmitter();
+
+  onDeleteCharacter (index:number){
     // emitir el id del personaje
-    console.log({index})
+    this.onDelete.emit(index);
   }
  }
